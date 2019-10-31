@@ -19,6 +19,19 @@ class QuestionPoolController {
       return res.status(500).send("System Error. Contact Support");
     }
   }
+  async getQPoolById(req, res, next) {
+    const {CID} = req.params;
+    try {
+      const questionPool = await QuestionPool.findOne({ CID });
+      if (questionPool) return res.status(200).json(questionPool);
+      else
+        return res
+          .status(400)
+          .send("Question Pool Not Found")
+    } catch (err) {
+      return res.status(500).json("System Error, Contact Support");
+    }
+  }
 }
 
 module.exports = new QuestionPoolController();
