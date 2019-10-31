@@ -15,7 +15,6 @@ class QuestionPoolController {
       await newQuestionPool.save();
       return res.status(201).send("Created");
     } catch (e) {
-      console.error(e);
       return res.status(500).send("System Error. Contact Support");
     }
   }
