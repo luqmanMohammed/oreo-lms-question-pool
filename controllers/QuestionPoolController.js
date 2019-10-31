@@ -20,9 +20,9 @@ class QuestionPoolController {
     }
   }
   async getQPoolById(req, res, next) {
-    const {CID} = req.params;
+    const {cid} = req.params;
     try {
-      const questionPool = await QuestionPool.findOne({ CID });
+      const questionPool = await QuestionPool.findOne({ CID:cid });
       if (questionPool) return res.status(200).json(questionPool);
       else
         return res

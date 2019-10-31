@@ -39,5 +39,5 @@ const db = mongoose.connection;
 db.once("open", () => {
   console.log(`MongoDB Connection Established`);
   const IndexRouter = require("./routes/index");
-  app.use("/question", IndexRouter);
+  app.use("/questionbank", IndexRouter);
 });

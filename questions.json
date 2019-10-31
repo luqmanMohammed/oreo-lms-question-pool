@@ -1,0 +1,57 @@
+{
+  "CID": "1001",
+  "questions": [
+    {
+      "question": "What are scripting languages",
+      "questionID": 1,
+      "awnsers": [
+        {
+          "awnser": "Js",
+          "description": "js is a scripting language",
+          "isCorrect": true
+        },
+        {
+          "awnser": "Java",
+          "description": "java is a compile language",
+          "isCorrect": false
+        },
+        {
+          "awnser": "Ts",
+          "description": "Ts is a scripting language",
+          "isCorrect": true
+        },
+        {
+          "awnser": "C#",
+          "description": "C# is a compile language",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+        "question": "What are scripting languages",
+        "questionID": 2,
+        "awnsers": [
+          {
+            "awnser": "Js",
+            "description": "js is a scripting language",
+            "isCorrect": true
+          },
+          {
+            "awnser": "Java",
+            "description": "java is a compile language",
+            "isCorrect": false
+          },
+          {
+            "awnser": "Ts",
+            "description": "Ts is a scripting language",
+            "isCorrect": true
+          },
+          {
+            "awnser": "C#",
+            "description": "C# is a compile language",
+            "isCorrect": false
+          }
+        ]
+      }
+  ]
+}

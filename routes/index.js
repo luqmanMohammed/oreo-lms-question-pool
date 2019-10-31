@@ -8,6 +8,6 @@ IndexRouter.get("/health", (req, res) => {
     health: "active"
   });
 });
-
+IndexRouter.use("/pools",QuestionPoolRouter);
 
 module.exports = IndexRouter;
